@@ -1,0 +1,80 @@
+<!DOCTYPE = html>
+<html>
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a> 
+        <a href="contact.html">Contact Me</a>
+        <a href="https://github.com/rlewis234/rl-web-scripting-1-repository">Github</a>
+    </nav>
+
+    <main>
+        <section id="contactme">
+            <h2>Contact Me</h2>
+            <form action="" method="post">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" required >
+                <br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <br>
+
+                <label for="phonenum">Phone Number:</label>
+                <input type="tel" id="phonenum" required>
+                <br>
+
+                <label for="topic">topic:</label>
+                <br>
+                <select id="topic" name="topic" required>
+                    
+                    <option value="projectinquiry">Project Inquiry</option>
+
+                    <option value="business">Business</option>
+
+                    <option value="furtherinfo">Further Information</option>
+
+                </select>
+                <br>
+
+                <label for="preferedcontact">Prefered contact:</label>
+                <br>
+                <fieldset>
+                    <legend> What method of contact do you preffer?</legend>
+                    
+                    <div>
+                        <input type="radio" id="phone call" name="contact_choice"> Phonecall
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="text" name="contact_choice"> Text
+                    </div>
+
+                    <div>
+                        <input type="radio" id="email" name="contact_choice"> Email
+                    </div>
+                </fieldset>
+                <br>
+
+                <label for="messagefield">Message:</label>
+                <br>
+                <textarea id="messagefield" name="message" required minlength="10"></textarea>
+                <br>
+
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ryan Lewis</p>
+        <a href="mailto:rlewis@lakelandcollege.edu">rlewis1@lakelandcollege.edu</a>
+    </footer>
+
+</html>
