@@ -1,5 +1,5 @@
-<!DOCTYPE = html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
     <header>
         <h1>Contact Me</h1>
@@ -32,7 +32,7 @@
 
                 <label for="topic">topic:</label>
                 <br>
-                <select id="topic" name="topic" required>
+                <select id="topic" name="topic">
                     
                     <option value="projectinquiry">Project Inquiry</option>
 
@@ -43,21 +43,19 @@
                 </select>
                 <br>
 
-                <label for="preferedcontact">Prefered contact:</label>
-                <br>
-                <fieldset>
+                <fieldset id="preferedcontact" name="preferedcontact">
                     <legend> What method of contact do you preffer?</legend>
                     
                     <div>
-                        <input type="radio" id="phone call" name="contact_choice"> Phonecall
+                        <input type="radio" id="phonecall_pref" name="contact_choice"> Phonecall
                     </div>
                     
                     <div>
-                        <input type="radio" id="text" name="contact_choice"> Text
+                        <input type="radio" id="text_pref" name="contact_choice"> Text
                     </div>
 
                     <div>
-                        <input type="radio" id="email" name="contact_choice"> Email
+                        <input type="radio" id="email_pref" name="contact_choice"> Email
                     </div>
                 </fieldset>
                 <br>
