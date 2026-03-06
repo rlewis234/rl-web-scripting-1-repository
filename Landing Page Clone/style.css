@@ -1,0 +1,149 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav .links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 var(--space-2);
+}
+
+#flaghero {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: url(heroflag.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: center;
+}
+
+.bottom-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.register-button-container {
+  margin-left: 20px;
+}
+
+.register-button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.grid-container {
+    margin: 50px auto;
+    width: min(1100px, 95%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.grid-container .card  {
+    padding: 2em;
+    border-radius: .5em;
+    border: solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.grid-container .p {
+    flex-grow: 1fr;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: .5em;
+    border: solid black;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    
+}
+
+.table-container h3 {
+    border-radius: .5em;
+    padding: 5px;
+    border: solid black;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.table-container td {
+    border-radius: .5em;
+    border: solid black;
+    text-align: center;
+    flex-grow: 1fr;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: .5em;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    justify-content: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
