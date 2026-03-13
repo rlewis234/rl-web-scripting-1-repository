@@ -1,0 +1,283 @@
+:root {
+    --header-size: 2em;
+    --body-size: 1.5em;
+    --body-size2: 1.2rem;
+    --main-color: #add8e6;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --button-color: #007bff;
+    --button-hover-color: #0056b3;
+    --buton-text-color: #ffffff;
+    --border-color: #000000;
+    --space: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+    --header-size: 2em;
+    --body-size: 1.5em;
+    --body-size2: 1.2rem;
+    --main-color: #add8e6;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --button-color: #007bff;
+    --button-hover-color: #0056b3;
+    --buton-text-color: #ffffff;
+    --border-color: #000000;
+    --space: 2px;
+}
+}
+
+[data-theme="dark"]{
+    --main-color: #505254;
+    --text-color: #ffffff;
+    --button-color: #007bff;
+    --button-hover-color: #0056b3;
+    --buton-text-color: #ffffff;
+    --background-color: #000000;
+    --border-color : #505254;
+}
+
+header{
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav .links {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    font-size: var(--header-size);
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 var(--space);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#oilhero {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: url(herooil.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: center;
+    animation: fadeIn 4s;
+}
+
+@media (min-width: 64rem) {
+    #oilhero {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: url(herooil.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    animation: fadeIn 4s;
+    }
+}
+
+#green {
+    background-image: url(green.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150;
+    animation: fadeIn 4s;
+    margin: auto;
+}
+
+#blue {
+    background-image: url(blue.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150;
+    margin: auto;
+    animation: fadeIn 4s;
+}
+
+#red {
+    background-image: url(red.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150;
+    margin: auto;
+    animation: fadeIn 4s;
+}
+
+.bottom-content {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.overlay-text {
+    color: var(--buton-text-color);
+    font-size: var(--header-size);
+    font-weight: bold;
+}
+
+.order-button-container {
+  margin-left: 20px;
+}
+
+.order-button {
+    padding: 10px;
+    background-color: var(--button-color);
+    color: var(--buton-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 150ms ease;
+}
+
+.order-button:hover {
+    background-color: var(--button-hover-color);
+    transform: translateY(-4px);
+}
+
+.grid-container {
+    margin: 50px auto;
+    width: min(1100px, 95%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+@media (max-width: 48rem) {
+    .grid-container {
+    margin: 50px auto;
+    width: min(1100px, 95%);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+}
+
+.grid-container .card  {
+    padding: 2em;
+    border-radius: .5em;
+    border: solid var(--border-color);
+    text-align: center;
+    font-size: var(--body-size2);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    transition: transform 150ms ease;
+}
+
+.grid-container .card:hover {
+    transform: translateY(-4px);
+}
+
+.grid-container .p {
+    flex-grow: 1fr;
+    font-size: var(--body-size2);
+}
+
+.product-container {
+    margin: 50px auto;
+    width: min(1100px, 95%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+@media (max-width: 48rem) {
+    .product-container {
+    margin: 50px auto;
+    width: min(1100px, 95%);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+}
+
+.product-container .card  {
+    padding: 2em;
+    border-radius: .5em;
+    border: solid var(--border-color);
+    text-align: center;
+    font-size: var(--body-size2);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    transition: transform 150ms ease;
+}
+
+.product-container .card:hover {
+    transform: translateY(-4px);
+}
+
+.product-container button{
+    background-color: var(--button-color);
+    color: var(--buton-text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 150ms ease;
+}
+
+.product-container button:hover{
+    background-color: var(--button-hover-color);
+    transform: translateY(-4px);
+}
+
+.product-container .p {
+    flex-grow: 1fr;
+    font-size: var(--body-size2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 300ms ease both;
+}

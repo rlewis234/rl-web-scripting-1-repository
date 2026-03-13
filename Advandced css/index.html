@@ -1,0 +1,117 @@
+<html lang="en">
+    <script>
+        function toggletheme(){
+            const root = document.documentElement; // <html>
+            const btn = document.getElementById("themeToggle");
+            btn.addEventListener("click", () => {
+                const isDark = root.getAttribute("data-theme") === "dark";
+                root.setAttribute("data-theme", isDark ? "light" : "dark");
+            });
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Advanced CSS Page</title>
+</head>
+
+<header>
+    <h1>Trader Moe's Snake Oil</h1>
+    <nav class = "nav">
+        <div class="links">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+        </div>
+    </nav>
+    <button id="themeToggle" type="button" onclick="toggletheme()">
+        Toggle theme
+    </button>
+</header>
+
+<div class="container">
+    <main>
+        
+        <body>
+
+            <section id="hero">
+                <div id="oilhero">
+                    <div class="bottom-content">
+                        <div class="overlay-text">
+                            <p>100% Pure Genuine Snake Oil Only $5!</p>
+                        </div>
+                        <div class="order-button-container">
+                            <button class="order-button">Order Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reviews">
+                <h2>Reviews from Customers</h2>
+                <div class="grid-container">
+                    <div class="card">
+                        <h3>Fred Fraudly - 10/10</h3>
+                        <p>Trader Moe's Snake Oil is amazing! It cured all my ailments I've never felt so good in my life!</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Holly hoaxer - 8/10</h3>
+                        <p>Snake Oil does wonders for your health. Highly recomened it to everyone!</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Gary Grifticus - 9.5/10</h3>
+                        <p>Outstanding product well worth the price!</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Seamus Scamly - 7/10</h3>
+                        <p>Took longer than expected to see results but overall happy with outcome.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="products">
+                <h2>Other Products</h2>
+                <div class="product-container">
+
+                    <div class="card">
+                        <div id="green"></div>
+                        <h4>Herbal Extract | $3.50</h4>
+                        <p>A mix of natural herbs for better health</p>
+                        <button>Order Now!</button>
+                    </div>
+                    
+                    <div class="card">
+                        <div id="red"></div>
+                        <h4>Health Potion Drink | $4.35</h4>
+                        <p>100% all nature mixture to promote healing and joint health</p>
+                        <button>Order Now!</button>
+                    </div>
+
+                    <div class="card">
+                        <div id="blue"></div>
+                        <h4>Berry Blend | $2.75</h4>
+                        <p>A heathly blend of berries for an all nature good taste</p>
+                        <button>Order Now!</button>
+                    </div>
+
+                </div>
+            </section>
+            
+        </body>
+
+    </main>
+
+    <footer>
+        Copyright © 2026 Ryan Lewis
+        <a href="mailto:ryan@lewis.com">ryan@lewis.com</a>
+    </footer>
+</div>
+
+</html>
