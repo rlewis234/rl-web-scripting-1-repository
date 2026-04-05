@@ -1,0 +1,65 @@
+:root {
+    --bordercolor: #0000FF;
+    --hovercolor: #0044cc;
+}
+
+h1{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--bordercolor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--hovercolor);
+    transform: scale(1.05);
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#searchInput{
+    font-size: 1.5rem;
+}
+
+#status{
+    font-size: 1.25rem;
+}
+
+.card {
+    border: 2px solid var(--bordercolor);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    border-radius: 8px;
+    max-width: 100%;
+}
