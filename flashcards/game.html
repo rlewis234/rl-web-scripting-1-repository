@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" href="css/flashcards.css">
+		<title>Flashcard Study</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Flashcards</h1>
+			<a href="flashcards.html">Home</a>
+		</header>
+
+		<div id="themecont">
+			<p>Change Theme</p>
+			<select id="theme-selector">
+				<option value="light">Light</option>
+				<option value="dark">Dark</option>
+				<option value="orange">Orange</option>
+			</select>
+		</div>
+
+		<div id="gamewrapper"></div>
+			<p id="scorestatus">Score: </p>
+			<p id="gameStatus"></p>
+			<p id="anwserStatus"></p>
+        	<div id="flashcards"></div>
+		</div>
+	</body>
+
+	<div id="restartButton">
+		<button onclick="restartGame()">Restart Game</button>
+	</div>
+    <script src="js/flashcards.js"></script>
+
+	<script>
+
+    	document.addEventListener('DOMContentLoaded', function () {
+
+        const params = new URLSearchParams(window.location.search);
+
+        const catig = params.get('catig');
+
+        console.log(catig);
+		startGame(catig)
+    });
+	</script>
+	<script src="js/themes.js"></script>
+</html>

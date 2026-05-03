@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/flashcards.css">
+        <title>Flashcards Study</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Flashcards</h1>
+            <a href="flashcards.html">Home</a>
+        </header>
+
+        <div id="themecont">
+            <p>Change Theme</p>
+            <select id="theme-selector">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="orange">Orange</option>
+            </select>
+        </div>
+
+        <p>Mouse over cards to flip and see awnsers</p>
+
+        <select id="categoryFilter">
+            <option value="" selected disabled hidden>Select a Category</option>
+            <option value="all">All</option>
+            <option value="ww1">WW1</option>
+            <option value="ww2">WW2</option>
+            <option value="american_revolution">American Revolution</option>
+            <option value="napoleonic_wars">Napoleonic Wars</option>
+        </select>
+
+        <div id="card-container"></div>
+
+        <script src="js/practice.js"></script>
+        <script src="js/themes.js"></script>
+    </body>
+
+</html>

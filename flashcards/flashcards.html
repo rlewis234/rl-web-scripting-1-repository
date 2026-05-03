@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/flashcards.css">
+        <title>Study Flashcards</title>
+    </head>
+
+    <header>
+        <h1>Flashcard Study</h1>
+    </header>
+
+    <body>
+        <div id="themecont">
+            <p>Change Theme</p>
+            <select id="theme-selector">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="orange">Orange</option>
+            </select>
+        </div>
+
+        <div class="praticeDiv">
+            <h2>Pratice Mode</h2>
+            <p>Regular Flashcards, flip cards to see awnsers</p>
+            <a href="practice.html">
+                <div class="card-link">
+                    <p>Pratice Mode</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="quizwrapper">
+            <h2>Quiz Mode</h2>
+            <p>Test yourself in a quiz game mode in a varity of categories</p>
+            <a href="game.html?catig=ww1">
+                <div class="card-link">
+                    <p>World War 1</p>
+                </div>
+            </a>
+
+            <a href="game.html?catig=ww2">
+                <div class="card-link">
+                    <p>World War 2</p>
+                </div>
+            </a>
+
+            <a href="game.html?catig=american_revolution">
+                <div class="card-link">
+                    <p>The American Revolution</p>
+                </div>
+            </a>
+
+            <a href="game.html?catig=napoleonic_wars">
+                <div class="card-link">
+                    <p>Napoleonic Wars</p>
+                </div>
+            </a>
+        </div>
+
+        <script src="js/themes.js"></script>
+
+    </body>
+
+</html>
